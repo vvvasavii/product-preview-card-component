@@ -80,12 +80,9 @@ h6 {
 /*styling starts here*/
 
 :root {
-    /* Primary */
-
     --Dark-cyan: hsl(158, 36%, 37%);
     --Cream: hsl(30, 38%, 92%);
 
-    /* Neutral */
 
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
@@ -200,12 +197,8 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;  /*THIS.THIS CENTERS MY CONTAINER VERTICALLY*/
     }
-   html{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
+ 
 }
 
