@@ -1,0 +1,211 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    5. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*attribution proviided by the frontend mentor*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*styling starts here*/
+
+:root {
+    /* Primary */
+
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Cream);
+}
+
+/*this is the main conatiner*/
+.frame {
+    --content-padding: 1.5rem;
+    background-color: var(--White);
+    margin: 1.7rem 0.95rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 600px;
+}
+
+/*everything in the container from below the product pic*/
+.product-complete-info {
+    padding: var(--content-padding);
+    display: grid;  /*did this to stretch the button*/
+}
+
+.product-type {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    text-transform: uppercase;
+    font-size: 0.710rem;
+    letter-spacing: 0.33rem;
+}
+
+.product-name {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+    line-height: 2.03rem;
+    padding-top: 0.7rem;
+    padding-bottom: 1.1rem;
+}
+
+.product-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    font-size: 0.880rem;
+    line-height: 1.45rem;
+}
+
+/*for bringing the selling price and og price next to each other*/
+.product-prices-flex {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 0.7rem;
+    gap: 1.1rem;
+}
+
+.product-selling-price {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+    font-size: 2rem;
+}
+
+.product-actual-price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    font-size: 0.9rem;
+}
+
+.product-button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: var(--White);
+    font-size: 0.9rem;
+    background-color: var(--Dark-cyan);
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.79rem 1rem;
+    display: inline-flex;
+    gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
+   cursor: pointer;
+}
+
+.product-button:hover{
+    background-color:  hsl(158, 36%, 20%);
+
+}
+
+
+
+/*media queries for site resposiveness*/
+@media (min-width:600px) 
+{
+    .frame{
+        display: grid;
+       grid-template-columns: 1fr 1fr; /*using flex wasnt making the content cells equal despite using 1 1 50%,for some reasons*/
+    }
+    body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   html{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
