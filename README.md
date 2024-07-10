@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/vvvasavii/product-preview-card-component]
+- Live Site URL: [https://product-preview-card-component-azure.vercel.app/]
 
 ## My process
 
@@ -45,7 +45,7 @@ In short,this project helped me grasp how to actually use styles and put my newl
 
 ## Author
 
-- Website - []
+- Website - [https://product-preview-card-component-azure.vercel.app/]
 - Frontend Mentor - [https://www.frontendmentor.io/profile/vvvasavii]
 ## Acknowledgments
 Having no mentors in the cs field, I completed this project majorly by myself. Whenever i was stuck on a certain piece of code I would search the internet for solutions to questions posted by people who were also stuck similarly before me.
